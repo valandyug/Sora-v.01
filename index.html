@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SORA – Your calm companion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SORA – a gentle AI companion for overthinkers." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- PAGE 1: HERO + AVATAR -->
+  <section id="page-hero" class="page page--visible">
+    <div class="hero-bg-orbit orbit-1"></div>
+    <div class="hero-bg-orbit orbit-2"></div>
+    <div class="hero-bg-orbit orbit-3"></div>
+
+    <header class="hero-header">
+      <div class="hero-logo">SORA</div>
+      <div class="hero-pill">Overthinking safe-space</div>
+    </header>
+
+    <div class="hero-content">
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar-ring"></div>
+        <img src="assets/avatar.png" alt="SORA Avatar" class="hero-avatar">
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-hand">hey, I’m here with you.</p>
+        <h1 class="hero-title">A calm corner<br>for your busy mind.</h1>
+        <p class="hero-sub">
+          One gentle companion for love, stress, future-worries<br>
+          and late-night overthinking.
+        </p>
+
+        <button id="btn-begin" class="hero-btn">Begin with SORA</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 2: INTRO + VOICE -->
+  <section id="page-intro" class="page">
+    <div class="intro-shell">
+      <div class="intro-left">
+        <h2>Hi, I’m SORA.</h2>
+        <p>
+          I’m not here to judge or tell you to “just relax”.<br>
+          I’m here to notice your overthinking, slow it down with you,<br>
+          and help you find one gentle next step.
+        </p>
+
+        <ul class="intro-list">
+          <li>🌀 Break overthinking loops without feeling crazy.</li>
+          <li>💜 Understand confusing feelings and relationships.</li>
+          <li>🌙 Sit with you when your mind is loud at 2am.</li>
+        </ul>
+
+        <div class="intro-buttons">
+          <button id="btn-voice" class="hero-btn hero-btn--ghost">▶ Listen to SORA</button>
+          <button id="btn-chat" class="hero-btn">Continue to chat</button>
+        </div>
+      </div>
+
+      <div class="intro-right">
+        <div class="intro-card">
+          <p class="intro-card-label">Tonight’s gentle note</p>
+          <p class="intro-card-text">
+            You don’t have to fix your whole life today.<br>
+            The work is just beginning. You showed up – and that’s enough.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 3: CHAT -->
+  <section id="page-chat" class="page">
+    <div class="chat-shell">
+      <header class="chat-top">
+        <div class="chat-top-left">
+          <div class="chat-avatar-mini">S</div>
+          <div>
+            <div class="chat-top-title">SORA</div>
+            <div class="chat-top-sub">Calm companion • Prototype</div>
+          </div>
+        </div>
+        <div class="chat-top-right">
+          <button class="chip">Overthinking</button>
+          <button class="chip">Relationships</button>
+          <button class="chip">Future</button>
+          <button class="chip">Night mode</button>
+        </div>
+      </header>
+
+      <main class="chat-main">
+        <div id="chat-window" class="chat-window"></div>
+      </main>
+
+      <footer class="chat-input-area">
+        <form id="chat-form" class="chat-form">
+          <textarea id="user-input" rows="1"
+            placeholder="Tell SORA what’s on your mind…"></textarea>
+          <button id="send-btn" type="submit">Send</button>
+        </form>
+        <p class="chat-hint">
+          SORA alpha note: The work is just beginning. This tool is not fully completed yet.
+        </p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
