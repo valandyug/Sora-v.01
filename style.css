@@ -6,10 +6,13 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 }
 
 body {
@@ -39,7 +42,17 @@ body {
 /* ============ PAGE 1 – HERO ============ */
 
 .hero {
-  height: 100%;
+     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
 }
 
 #page-hero {
@@ -532,4 +545,10 @@ body {
     align-items: flex-start;
   }
 }
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        min-height: -webkit-fill-available;
+    }
+}
+
 
