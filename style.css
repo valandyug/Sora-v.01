@@ -8,8 +8,10 @@
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -39,7 +41,11 @@ body {
 /* ============ PAGE 1 – HERO ============ */
 
 .hero {
-  height: 100%;
+   min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
 }
 
 #page-hero {
@@ -532,4 +538,5 @@ body {
     align-items: flex-start;
   }
 }
+
 
