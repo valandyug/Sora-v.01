@@ -6,13 +6,10 @@
   box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-}
-
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -42,17 +39,7 @@ body {
 /* ============ PAGE 1 – HERO ============ */
 
 .hero {
-     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-
+  height: 100%;
 }
 
 #page-hero {
@@ -550,5 +537,3 @@ body {
         min-height: -webkit-fill-available;
     }
 }
-
-
